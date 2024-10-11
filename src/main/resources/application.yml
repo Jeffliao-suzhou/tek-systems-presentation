@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: mobilefood
+
+csv:
+  file:
+    name: Mobile_Food_Facility_Permit.csv
