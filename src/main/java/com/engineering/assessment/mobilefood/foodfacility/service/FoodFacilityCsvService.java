@@ -8,4 +8,6 @@ public interface FoodFacilityCsvService {
     List<FoodFacilityDTO> readFoodFacilityCsv();
 
     List<FoodFacilityDTO> getApprovedAndLowestPoliceDistrictsFoodFacility();
+
+    List<FoodFacilityDTO> getApprovedAndSpecialZipCodesFoodFacility(String zipCodes);
 }

@@ -1,8 +1,7 @@
 # mobile food project
 
 ## How to start in your local machine.
-Since this is a very open and simple demo project for presentation, so I just provide you a JAR file.
-You can run it in your local machine using the command below, but you need to install JDK 11+ as the pre-condition:
+Since this is a very open and simple demo project for presentation, You can run it in your local machine using the command below, but you need to install JDK 11+ as the pre-condition:
 java -jar mobilefood-0.0.1-SNAPSHOT.jar
 
 
@@ -20,16 +19,19 @@ java -jar mobilefood-0.0.1-SNAPSHOT.jar
 
 Defines the jobs the software is supposed to parse CSV file and get some information you want.
 
-I attached 2 APIs for your reference and run them in your local machine.
+I attached 3 APIs for your reference and run them in your local machine.
 http://localhost:8080/api/foodfacility/read-csv 
 ### Retreive all the data from csv file
 
 http://localhost:8080/api/foodfacility/approved-lowest-police-districts-food-facility 
 ### Filter records to get approved and lowest police districts food facility.
 
+http://localhost:8080/api/foodfacility/approved-specific-zipcodes-food-facility?zipcodes=64
+### Filter records to get approved and specific zipcodes food facility. You can replace 64 to any string you want
+
 ### Domain Layer (or Model Layer)
 
-No database function added, so I didn't mark an notes in domain layer.
+No database component added in domain layer.
 
 ### Infrastructure Layer
 

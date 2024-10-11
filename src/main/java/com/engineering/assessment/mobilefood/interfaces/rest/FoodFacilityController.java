@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -28,6 +29,11 @@ public class FoodFacilityController {
     @GetMapping("/approved-lowest-police-districts-food-facility")
     public List<FoodFacilityDTO> getApprovedAndLowestPoliceDistrictsFoodFacility() {
         return foodFacilityCsvService.getApprovedAndLowestPoliceDistrictsFoodFacility();
+    }
+
+    @GetMapping("/approved-specific-zipcodes-food-facility")
+    public List<FoodFacilityDTO> getApprovedAndSpecificZipcodesFoodFacility(@RequestParam String zipcodes) {
+        return foodFacilityCsvService.getApprovedAndSpecialZipCodesFoodFacility(zipcodes);
     }
 
 }
